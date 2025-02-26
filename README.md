@@ -127,6 +127,21 @@ The tool identifies various Swagger UI vulnerabilities including:
 5. **Confidence Scoring**: Assigns confidence levels to detected versions
 6. **Result Reporting**: Formats and presents findings with vulnerability details
 
+## Feature plans for future
+
+- Add `-valid` flag for identifying swagger endpoints
+- Add support for custom vulnerability definitions via YAML/JSON files
+- Implement API specification validation and security checks
+- Add support for authenticated API endpoints scanning
+- Create detailed HTML reports with vulnerability explanations
+- Update output formats for integration with CI/CD pipeline
+- Implement real-time vulnerability database updates
+- Add support for custom HTTP headers and proxy configuration 
+- Create a web interface for easier scanning management
+- Implement REST API for programmatic access
+- Add support for scanning API Gateway implementations
+- Enhanced logging and debugging capabilities
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.

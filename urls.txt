@@ -1,0 +1,1 @@
+https://petstore.swagger.io/

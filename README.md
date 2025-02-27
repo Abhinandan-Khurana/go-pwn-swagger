@@ -5,11 +5,11 @@
 <p align="center">
   <a href="https://goreportcard.com/report/github.com/Abhinandan-Khurana/go-pwn-swagger"><img src="https://goreportcard.com/badge/github.com/Abhinandan-Khurana/go-pwn-swagger" alt="Go Report Card"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
-  <a href="https://golang.org/doc/devel/release.html"><img src="https://img.shields.io/badge/Go-1.22+-00ADD8.svg" alt="Go Version"></a>
+  <a href="https://golang.org/doc/devel/release.html"><img src="https://img.shields.io/badge/Go-1.23+-00ADD8.svg" alt="Go Version"></a>
 <img src="https://img.shields.io/badge/version-v1.0.0-blue.svg" alt="Version">
 </p>
 
-A comprehensive Swagger UI version detection and vulnerability scanner written in Go. 
+A comprehensive Swagger UI version detection and vulnerability scanner written in Go.
 This tool helps security professionals, developers, and API maintainers identify the Swagger UI version in use and any associated security vulnerabilities.
 
 ## 🚀 Features
@@ -29,7 +29,7 @@ This tool helps security professionals, developers, and API maintainers identify
 
 ## 📋 Prerequisites
 
-- Go 1.22 or higher
+- Go 1.23 or higher
 - Chrome/Chromium browser (for headless browser detection)
 
 ## 💻 Direct Installation
@@ -73,6 +73,8 @@ go build -o go-pwn-swagger
 
 ## 📝 Example Output
 
+stdout:
+
 ```
 Swagger UI Version Detector and Vulnerability Scanner
    ____ _____        ____ _      ______        ______      ______ _____ _____ ____  _____
@@ -100,19 +102,36 @@ Remember to verify findings manually before making security decisions.
 Swagger UI version detection is based on heuristics and may not be 100% accurate.
 ```
 
+File output:
+
+```json
+[
+  {
+    "url": "https://petstore.swagger.io/",
+    "major_version": "5.x",
+    "specific_version": "5.20.0",
+    "confidence": 0.95,
+    "vulnerabilities": [
+      "No known vulnerabilities for Swagger UI 5.x at this time"
+    ],
+    "detection_method": "JavaScript Execution"
+  }
+]
+```
+
 ## 🛡️ Known Vulnerabilities
 
 The tool identifies various Swagger UI vulnerabilities including:
 
-| Severity | Vulnerability | Vulnerable Versions |
-|----------|---------------|---------------------|
-| Medium   | Server-side Request Forgery (SSRF) | < 4.1.3 |
-| Medium   | Insecure Defaults | < 3.26.1 |
-| Medium   | Relative Path Overwrite (RPO) | < 3.23.11 |
-| Medium   | Cross-site Scripting (XSS) | >=2.0.3 <2.0.24, >=3.0.0 < 3.0.13, < 2.2.1, < 3.20.9, < 3.4.2, < 2.2.3 |
-| Medium   | Reverse Tabnabbing | < 3.18.0 |
-| Critical | Cross-site Scripting (XSS) | <2.1.0 |
-| High     | Cross-site Scripting (XSS) | <2.2.1 |
+| Severity | Vulnerability                      | Vulnerable Versions                                                    |
+| -------- | ---------------------------------- | ---------------------------------------------------------------------- |
+| Medium   | Server-side Request Forgery (SSRF) | < 4.1.3                                                                |
+| Medium   | Insecure Defaults                  | < 3.26.1                                                               |
+| Medium   | Relative Path Overwrite (RPO)      | < 3.23.11                                                              |
+| Medium   | Cross-site Scripting (XSS)         | >=2.0.3 <2.0.24, >=3.0.0 < 3.0.13, < 2.2.1, < 3.20.9, < 3.4.2, < 2.2.3 |
+| Medium   | Reverse Tabnabbing                 | < 3.18.0                                                               |
+| Critical | Cross-site Scripting (XSS)         | <2.1.0                                                                 |
+| High     | Cross-site Scripting (XSS)         | <2.2.1                                                                 |
 
 ## 🔍 How It Works
 
@@ -136,7 +155,7 @@ The tool identifies various Swagger UI vulnerabilities including:
 - Create detailed HTML reports with vulnerability explanations
 - Update output formats for integration with CI/CD pipeline
 - Implement real-time vulnerability database updates
-- Add support for custom HTTP headers and proxy configuration 
+- Add support for custom HTTP headers and proxy configuration
 - Create a web interface for easier scanning management
 - Implement REST API for programmatic access
 - Add support for scanning API Gateway implementations
@@ -162,4 +181,5 @@ Made with ❤️ by [Abhinandan Khurana](https://github.com/Abhinandan-Khurana)
 
 ---
 
-**Disclaimer**: This tool is meant for security research and testing purposes only. Always obtain proper authorization before scanning systems you don't own. 
+**Disclaimer**: This tool is meant for security research and testing purposes only. Always obtain proper authorization before scanning systems you don't own.
+

@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://petstore.swagger.io/",
+    "major_version": "5.x",
+    "specific_version": "5.20.0",
+    "confidence": 0.95,
+    "vulnerabilities": [
+      "No known vulnerabilities for Swagger UI 5.x at this time"
+    ],
+    "detection_method": "JavaScript Execution"
+  }
+]

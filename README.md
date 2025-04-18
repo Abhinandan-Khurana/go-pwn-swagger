@@ -6,7 +6,7 @@
   <a href="https://goreportcard.com/report/github.com/Abhinandan-Khurana/go-pwn-swagger"><img src="https://goreportcard.com/badge/github.com/Abhinandan-Khurana/go-pwn-swagger" alt="Go Report Card"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
   <a href="https://golang.org/doc/devel/release.html"><img src="https://img.shields.io/badge/Go-1.23+-00ADD8.svg" alt="Go Version"></a>
-<img src="https://img.shields.io/badge/version-v1.0.0-blue.svg" alt="Version">
+<img src="https://img.shields.io/badge/version-v1.0.1-blue.svg" alt="Version">
 </p>
 
 A comprehensive Swagger UI version detection and vulnerability scanner written in Go.
@@ -82,7 +82,7 @@ Swagger UI Version Detector and Vulnerability Scanner
  / /_/ / /_/ /_____/ /_/ / |/ |/ / / / /_____(__  )| |/ |/ / /_/ / /_/ / /_/ /  __/ /
  \__- /\____/     / -___/|__/|__/_/ /_/     /____/ |__/|__/\__-_/\__- /\__- /\___/_/
 /____/           /_/                                            /____//____/
-~ Made with ❤️ by Abhinandan-Khurana (@l0u51f3r007)                             v1.0.0
+~ Made with ❤️ by Abhinandan-Khurana (@l0u51f3r007)                             v1.0.1
 
 ====================================================
 Scanning 1 URLs with concurrency level 5
@@ -182,4 +182,3 @@ Made with ❤️ by [Abhinandan Khurana](https://github.com/Abhinandan-Khurana)
 ---
 
 **Disclaimer**: This tool is meant for security research and testing purposes only. Always obtain proper authorization before scanning systems you don't own.
-
